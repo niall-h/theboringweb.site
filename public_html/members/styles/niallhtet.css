@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100vw;
+  display: block;
+  margin: auto 10vw;
+}
+
+.portrait {
+  height: 50%;
+  max-height: 500px;
+  display: block;
+  margin: auto 10vw;
+}
+
+.navbar {
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.home-btn {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  height: 100%;
+  width: 100px;
+  color: black;
+  margin: auto 10vw;
+  text-decoration: none;
+}

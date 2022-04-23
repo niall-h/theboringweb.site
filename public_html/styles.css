@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 10px;
+}
+
+.header-title {
+  margin: auto;
+}
+
+.header-subtitle {
+  margin: auto;
+}
+
+.team {
+  width: 300px;
+  padding: 20px;
+  line-height: 15px;
+  background-color: rgb(229, 229, 229);
+}
+
+.btn {
+  width: fit-content;
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(163, 113, 12);
+}
+
+.btn:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.homework {
+  padding: 10px;
+  line-height: 15px;
+}
+
+.homework-content {
+  background-color: rgb(229, 229, 229);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
