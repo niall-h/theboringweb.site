@@ -33,14 +33,3 @@
 .btn:hover {
   background-color: rgb(219, 219, 219);
 }
-
-.homework {
-  padding: 10px;
-  line-height: 15px;
-}
-
-.homework-content {
-  background-color: rgb(229, 229, 229);
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
