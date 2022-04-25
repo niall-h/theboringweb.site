@@ -44,6 +44,5 @@ var html = Object.keys(languages)
   })
   .join("");
 
-// Log and inject into the DOM
-console.log(html);
+// Inject into the DOM
 document.querySelector(".hw2").innerHTML = html;
