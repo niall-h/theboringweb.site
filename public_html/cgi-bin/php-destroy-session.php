@@ -1,6 +1,7 @@
 <?php
-//    setcookie('username', '', time() - 3400); // empty value and old timestamp
-//    unset($_COOKIE['username']);'
+    $cookie_name = "username";
+    unset($_COOKIE[$cookie_name]);
+    setcookie($cookie_name, '', time() - 3400, "/"); // empty value and old timestamp
     require "analyticstracking.php";
 ?>
 
@@ -12,7 +13,7 @@
     <?php 
         header("Cache-Control: no-cache");
         header("Content-type: text/html");
-        setcookie('username', '', time() - 3400); // empty value and old timestamp
+        // setcookie('username', '', time() - 3400); // empty value and old timestamp
     ?>
 
    

@@ -1,15 +1,10 @@
-<?php 
-
-        if(!isset($_COOKIE["username"])) {
-            setcookie("username", $_POST["username"], time() + (86400 * 30));
-            $_COOKIE["username"] = $_POST["username"];
+<?php
+        $cookie_name = "username";
+        if(!is_null($_POST['username']) || !isset($_COOKIE[$cookie_name])) {
+            $username = $_POST['username']; 
+            setcookie($cookie_name, $username, time() + (3000), "/");
+            $_COOKIE[$cookie_name] = $username;
         }
-
-        // user enters username from html file -> $POST[username] is not empty -> setcookie with POST[username]
-        // go to session 1
-        // go to session 2
-        // destroy session set cookie to ""
-        // if you go to session 1, cookie is empty
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +23,7 @@
     </script>
     <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
     <script>window.LogRocket && window.LogRocket.init('ma7ybc/theboringwebsite');</script> 
-    <title>PHP Sessions</title>
+  <title>PHP Sessions</title>
  </head>
  <body>
     <?php 
@@ -42,10 +37,10 @@
     ?>
 
     <?php 
-        if(!isset($_COOKIE["username"])) {
+        if(!isset($_COOKIE[$cookie_name])) {
             echo "<p><b>Name:</b> You do not have a name set</p>";
         } else {
-            echo "<p><b>Name: </b>" . $_COOKIE["username"];
+            echo "<p><b>Name: </b>" . $_COOKIE[$cookie_name];
         }
 
     ?>
