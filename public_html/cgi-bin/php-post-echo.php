@@ -26,7 +26,7 @@
         echo "<hr>";
     ?>
 
-    <?php echo "<b>Query String:</b><br/>"; ?>
+    <?php echo "<b>Message Body:</b><br/>"; ?>
     <?php 
         $queryBody = file_get_contents('php://input'); 
         parse_str($queryBody, $post_array);
