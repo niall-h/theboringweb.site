@@ -8,7 +8,7 @@ var languages = {
     ["GET Echo", "perl-get-echo.pl"],
     ["POST Echo", "perl-post-echo.pl"],
     ["General Echo", "perl-general-echo.pl"],
-    ["Sessioning", "perl-sessions-1.pl"],
+    ["Sessioning", "../cgi-form/perl-cgiform.html"],
   ],
   C: [
     ["Hello, C!", "c-hello-html-world.cgi"],
@@ -17,8 +17,35 @@ var languages = {
     ["GET Echo", "c-get-echo.cgi"],
     ["POST Echo", "c-post-echo.cgi"],
     ["General Echo", "c-general-request-echo.cgi"],
-    ["Sessioning", "c-sessions-1.cgi"],
+    ["Sessioning", "../cgi-form/c-cgiform.html"],
   ],
+  PHP: [
+    ["Hello, PHP!", "php-hello-html-world.php"],
+    ["Hello, PHP! (JSON)", "php-hello-json-world.php"],
+    ["Environment Variables", "php-env.php"],
+    ["GET Echo", "php-get-echo.php"],
+    ["POST Echo", "php-post-echo.php"],
+    ["General Echo", "php-general-request-echo.php"],
+    ["Sessioning", "../cgi-form/php-cgiform.html"],
+  ],
+  Python: [
+    ["Hello, Python!", "python-hello-html-world.py"],
+    ["Hello, Python! (JSON)", "python-hello-json-world.py"],
+    ["Environment Variables", "python-env.py"],
+    ["GET Echo", "python-get-echo.py"],
+    ["POST Echo", "python-post-echo.py"],
+    ["General Echo", "python-general-request-echo.py"],
+    ["Sessioning", "python-sessions-1.cgi"],
+  ],
+  Ruby: [
+    ["Hello, Ruby!", "ruby-hello-html-world.rb"],
+    ["Hello, Ruby! (JSON)", "ruby-hello-json-world.rb"],
+    ["Environment Variables", "ruby-env.rb"],
+    ["GET Echo", "ruby-get-echo.rb"],
+    ["POST Echo", "ruby-post-echo.rb"],
+    ["General Echo", "ruby-general-request-echo.rb"],
+    ["Sessioning", "../cgi-form/ruby-cgiform.html"],
+  ]
 };
 
 // Create the HTML
