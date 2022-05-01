@@ -1,3 +1,4 @@
+<?php require "analyticstracking.php"; ?>
 <html>
  <head>
   <title>PHP Test</title>

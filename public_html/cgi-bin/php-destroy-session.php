@@ -1,10 +1,12 @@
-<?php
-    $cookie_name = "username";
-    unset($_COOKIE[$cookie_name]);
-    setcookie($cookie_name, '', time() - 3400, "/"); // empty value and old timestamp
-    require "analyticstracking.php";
+<?php 
+    session_start();
+    // remove all session variables
+    session_unset(); 
+    // destroy the session 
+    session_destroy(); 
 ?>
 
+<?php require "analyticstracking.php"; ?>
 <!DOCTYPE html>
  <head>
     <title>PHP Sessions Destroyed</title>

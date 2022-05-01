@@ -1,7 +1,16 @@
 #!/usr/bin/ruby
 require 'cgi'
+print "Content-type: text/html\n\n"
 
 # Create a new Ruby Session
+require 'cgi/session'
+cgi = CGI.new("html4")
+
+session = CGI::Session.new(cgi, "session_key" => "a_test", "prefix" => "rubysess.")
+print "Session key:", session["session_key"]
+# cookie = CGI::Cookie.new('SESSID' => session["session_key"])
+name = cgi["username"]
+session["username"] = name
 
 print "<html>"
 print "<head>"
@@ -11,8 +20,8 @@ print "<body>"
 
 print "<h1>Ruby Sessions Page 1</h1>"
 
-if defined?($name)
-	print "<p><b>Name:</b> #{$name}"
+if not(name.empty?)
+	print "<p><b>Name:</b> #{name}"
 else
 	print "<p><b>Name:</b> You do not have a name set</p>"
 end
