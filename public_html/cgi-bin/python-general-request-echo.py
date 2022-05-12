@@ -3,7 +3,6 @@ import os
 
 print ("Content-type:text/html\r\n\r\n")
 
-
 print ("<!DOCTYPE html> <html><head>")
 print ("<title>General Request Echo</title>") 
 print ("</head>")

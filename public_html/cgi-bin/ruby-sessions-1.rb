@@ -6,10 +6,15 @@ print "Content-type: text/html\n\n"
 require 'cgi/session'
 cgi = CGI.new("html4")
 
-session = CGI::Session.new(cgi, "session_key" => "a_test", "prefix" => "rubysess.")
-print "Session key:", session["session_key"]
-# cookie = CGI::Cookie.new('SESSID' => session["session_key"])
-name = cgi["username"]
+session = CGI::Session.new(cgi,
+	"session_id" => "_rb_sess_id",
+	"prefix" => "rubysess.")
+puts cgi.params
+if not(cgi.params.keys.include? 'username') && cgi["username"].empty?
+	name = session["username"]
+else
+	name = cgi["username"]
+end
 session["username"] = name
 
 print "<html>"
@@ -34,3 +39,5 @@ print "<button type='submit'>Destroy Session</button>"
 print "</form>"
 print "</body>"
 print "</html>"
+
+session.close

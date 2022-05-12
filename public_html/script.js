@@ -35,7 +35,7 @@ var languages = {
     ["GET Echo", "python-get-echo.py"],
     ["POST Echo", "python-post-echo.py"],
     ["General Echo", "python-general-request-echo.py"],
-    ["Sessioning", "python-sessions-1.cgi"],
+    ["Sessioning", "../cgi-form/python-cgiform.html"],
   ],
   Ruby: [
     ["Hello, Ruby!", "ruby-hello-html-world.rb"],

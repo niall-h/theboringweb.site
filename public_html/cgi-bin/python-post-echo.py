@@ -8,6 +8,7 @@ print ('<h1 align="center">Post Request Echo</h1>')
 print ('<hr>')
 print ('</head>')
 print ("<b>Message Body:</b>", "<br />\n")
+
 buffer = input()
 pairs = buffer.split('&')
 for pair in pairs:
