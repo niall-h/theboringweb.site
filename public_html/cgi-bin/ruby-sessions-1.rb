@@ -9,7 +9,6 @@ cgi = CGI.new("html4")
 session = CGI::Session.new(cgi,
 	"session_id" => "_rb_sess_id",
 	"prefix" => "rubysess.")
-puts cgi.params
 if not(cgi.params.keys.include? 'username') && cgi["username"].empty?
 	name = session["username"]
 else

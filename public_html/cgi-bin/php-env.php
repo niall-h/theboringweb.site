@@ -8,6 +8,7 @@
          echo '<hr/>';
   ?>
    <?php
+      
       foreach (getallheaders() as $name => $value) {
         echo "<b>$name:</b> $value </br>";
       }
